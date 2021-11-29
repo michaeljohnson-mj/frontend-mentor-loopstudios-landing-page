@@ -325,6 +325,10 @@ a {
   margin-right: 0px;
 }
 
+.footer ul:first-child {
+  margin: 0px;
+}
+
 .footer a {
   text-decoration: none;
   color: var(--white-color);
@@ -338,10 +342,6 @@ a {
 
 .social-icons-holder {
   justify-content: flex-end;
-}
-
-.social-icons-holder {
-  margin: 0px !important;
 }
 
 /* MEDIA QUERIES */
