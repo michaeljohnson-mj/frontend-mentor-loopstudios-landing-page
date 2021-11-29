@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --light-gray-color: hsl(0, 1%, 81%);
+  --dark-gray-color: hsl(0, 0%, 55%);
+  --very-dark-gray-color: hsl(0, 0%, 41%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-size: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--white-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.main-container {
+  max-width: 1140px;
+  margin: 0px auto;
+  width: 100%;
+  position: relative;
+}
+
+/* Scrollbar Styles  */
+::-webkit-scrollbar {
+  background: var(--light-gray-color);
+  border-radius: 4px;
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--very-dark-gray-color);
+  border-radius: 4px;
+}
+
+/* Header Styles */
+.header {
+  height: 100vh;
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-color: var(--white-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 10px 10px 10px 0px;
+  display: flex;
+}
+
+.navbar li {
+  margin: 12px;
+}
+
+.showcase {
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  border: 2px solid var(--white-color);
+  width: 50%;
+  padding: 30px;
+}
+
+.box h1 {
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white-color);
+  line-height: 4.37rem;
+}
+
+/* Section One Styles */
+.section-one {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0px;
+  background: var(--white-color);
+}
+
+.section-description {
+  position: absolute;
+  right: 0px;
+  bottom: 64px;
+  width: 50%;
+  padding: 50px 0px 0px 50px;
+  background: var(--white-color);
+}
+
+.section-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section-content {
+  color: var(--very-dark-gray-color);
+  font-size: 1rem;
+  padding-top: 30px;
+  line-height: 1.37rem;
+  font-family: "Alata", sans-serif;
+}
+
+/* Section Two Styles */
+
+.section-two {
+  padding-top: 50px;
+}
+
+.section-heading-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  background: var(--black-color);
+  color: var(--white-color);
+  font-family: "Alata", sans-serif;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+.grid-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 80px 0px 150px 0px;
+  gap: 30px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  background: var(--black-color);
+  opacity: 0.06;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.product-name {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  right: 60px;
+  color: var(--white-color);
+  font-size: 1.87rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  z-index: 999;
+}
+
+.grid-item:hover > .product-name {
+  color: var(--black-color);
+}
+
+.grid-item:hover > .overlay {
+  background: var(--white-color);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  background: var(--black-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+  background: var(--black-color);
+}
+
+.footer ul {
+  list-style: none;
+  margin: 25px 10px 0px 0px;
+  display: flex;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer li:last-child {
+  margin-right: 0px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.footer p {
+  color: var(--dark-gray-color);
+  margin-top: 25px;
+}
+
+.social-icons-holder {
+  justify-content: flex-end;
+}
+
+.social-icons-holder {
+  margin: 0px !important;
+}
