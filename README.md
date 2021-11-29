@@ -26,6 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots/screenshot-web.png)
+![](./screenshots/screenshot-mobile.png)
 
 ### Links
 
@@ -40,11 +41,13 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScript
 
 ### What I learned
 
 - Usage of CSS Grids.
 - Usage of css units like "rem".
+- Usage of picture tag to toggle images in desktop and responsive mode.
 - To create menu in mobile responsive mode.
 
 ### Useful resources

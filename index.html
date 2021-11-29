@@ -20,7 +20,7 @@
         <div class="main-container header-container">
           <nav class="navbar">
             <a href="#">
-              <img src="./images/logo.svg" alt="Loopstudios" />
+              <img class="logo" src="./images/logo.svg" alt="Loopstudios" />
             </a>
             <ul>
               <li><a href="#">About</a></li>
@@ -29,7 +29,25 @@
               <li><a href="#">Products</a></li>
               <li><a href="#">Support</a></li>
             </ul>
+
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
           </nav>
+
+          <!-- Mobile Menu -->
+          <div class="mobile-menu hidden" id="menu">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
 
           <div class="showcase">
             <div class="box">
@@ -41,10 +59,20 @@
 
       <section class="main-container section-one">
         <div>
-          <img
-            src="./images/desktop/image-interactive.jpg"
-            alt="Person wearing a virtual reality headset"
-          />
+          <picture>
+            <source
+              media="(min-width:992px)"
+              srcset="./images/desktop/image-interactive.jpg"
+            />
+            <source
+              media="(min-width:300px)"
+              srcset="./images/mobile/image-interactive.jpg"
+            />
+            <img
+              src="./images/desktop/image-interactive.jpg"
+              alt="Person wearing a virtual reality headset"
+            />
+          </picture>
         </div>
 
         <div class="section-description">
@@ -62,79 +90,161 @@
       <section class="main-container section-two">
         <div class="section-heading-holder">
           <h2 class="section-heading">Our creations</h2>
-          <a href="#" class="btn">See All</a>
+          <a href="#" class="btn btn-black">See All</a>
         </div>
 
         <div class="grid-4-col">
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-deep-earth.jpg"
-              alt="Earth's Image"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-deep-earth.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-deep-earth.jpg"
+              />
+              <img
+                src="./images/desktop/image-deep-earth.jpg"
+                alt="Earth's Image"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">Deep Earth</h3>
           </div>
 
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-night-arcade.jpg"
-              alt="Arcade Game"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-night-arcade.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-night-arcade.jpg"
+              />
+              <img
+                src="./images/desktop/image-night-arcade.jpg"
+                alt="Arcade Game"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">Night Arcade</h3>
           </div>
 
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-soccer-team.jpg"
-              alt="Football player kicking the ball"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-soccer-team.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-soccer-team.jpg"
+              />
+              <img
+                src="./images/desktop/image-soccer-team.jpg"
+                alt="Football player kicking the ball"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">Soccer Team VR</h3>
           </div>
 
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-grid.jpg"
-              alt="Rear wheel of a car"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-grid.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-grid.jpg"
+              />
+              <img
+                src="./images/desktop/image-grid.jpg"
+                alt="Rear wheel of a car"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">The Grid</h3>
           </div>
 
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-from-above.jpg"
-              alt="Roads with hairpin bends"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-from-above.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-from-above.jpg"
+              />
+              <img
+                src="./images/desktop/image-from-above.jpg"
+                alt="Roads with hairpin bends"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">From Up Above VR</h3>
           </div>
 
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-pocket-borealis.jpg"
-              alt="View of the aurora borealis"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-pocket-borealis.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-pocket-borealis.jpg"
+              />
+              <img
+                src="./images/desktop/image-pocket-borealis.jpg"
+                alt="View of the aurora borealis"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">Pocket Borealis</h3>
           </div>
 
           <div class="grid-item">
-            <img
-              src="./images/desktop/image-curiosity.jpg"
-              alt="Curiosity rover"
-            />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-curiosity.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-curiosity.jpg"
+              />
+              <img
+                src="./images/desktop/image-curiosity.jpg"
+                alt="Curiosity rover"
+              />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">The Curiosity</h3>
           </div>
 
           <div class="grid-item">
-            <img src="./images/desktop/image-fisheye.jpg" alt="Fish eye" />
+            <picture>
+              <source
+                media="(min-width:992px)"
+                srcset="./images/desktop/image-fisheye.jpg"
+              />
+              <source
+                media="(min-width:300px)"
+                srcset="./images/mobile/image-fisheye.jpg"
+              />
+              <img src="./images/desktop/image-fisheye.jpg" alt="Fish eye" />
+            </picture>
             <div class="overlay"></div>
             <h3 class="product-name">Make It Fisheye</h3>
           </div>
         </div>
+
+        <a href="#" class="btn btn-white">See All</a>
       </section>
 
       <footer class="footer">
@@ -182,5 +292,6 @@
         </div>
       </footer>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
