@@ -42,6 +42,7 @@ img {
 a {
   text-decoration: none;
   color: var(--white-color);
+  position: relative;
 }
 
 .main-container {
@@ -95,6 +96,19 @@ a {
 
 .navbar li {
   margin: 12px;
+}
+
+.navbar ul a:hover::after,
+.footer ul a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40%;
+  border-bottom: 2px solid var(--white-color);
 }
 
 .logo {
@@ -314,6 +328,7 @@ a {
 .footer a {
   text-decoration: none;
   color: var(--white-color);
+  position: relative;
 }
 
 .footer p {
